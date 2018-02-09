@@ -18,7 +18,7 @@
         <commons.lang.version>2.6</commons.lang.version>
         <lombok.version>1.16.16</lombok.version>
         <pojo.tester.version>0.7.5</pojo.tester.version>
-        <bootstrap.version>3.3.7</bootstrap.version>
+        <!-- bootstrap.version>3.3.7</bootstrap.version -->
         <jacoco.version>0.7.5.201505241946</jacoco.version>
         <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
         <version.maven.plugin.license>1.8</version.maven.plugin.license>
@@ -123,8 +123,10 @@
     </dependencies>
 
    <build>
-		<plugins>
+	           <directory>${project.basedir}/target</directory>
 
+	    <pluginManagement>
+		<plugins>
 			<plugin>
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
@@ -149,6 +151,7 @@
 				<artifactId>coveralls-maven-plugin</artifactId>
 				<version>4.1.0</version>
 			</plugin>
-		</plugins>
-	</build>
+		    </plugins>
+		<pluginManagement>
+       </build>
 </project>
