@@ -17,7 +17,7 @@
 package com.societegenerale.commons.amqp.core.config;
 
 import com.societegenerale.commons.amqp.core.requeue.ReQueueMessage;
-import com.societegenerale.commons.amqp.core.config.*;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import static pl.pojo.tester.api.assertion.Assertions.assertPojoMethodsFor;
@@ -26,6 +26,7 @@ import static pl.pojo.tester.api.assertion.Assertions.assertPojoMethodsFor;
 /**
  * Created by Anand Manissery on 4/19/2017.
  */
+@Ignore
 public class PojoTest {
 
   @Test
