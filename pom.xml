@@ -122,7 +122,6 @@
     </dependencies>
 
     <build>
-        <directory>${project.basedir}/target</directory>
         <pluginManagement>
             <plugins>
                 <plugin>
