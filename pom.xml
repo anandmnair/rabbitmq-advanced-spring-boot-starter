@@ -123,9 +123,8 @@
     </dependencies>
 
    <build>
-	           <directory>${project.basedir}/target</directory>
+	    <directory>${project.basedir}/target</directory>
 
-	    <pluginManagement>
 		<plugins>
 			<plugin>
 				<groupId>org.jacoco</groupId>
@@ -152,6 +151,5 @@
 				<version>4.1.0</version>
 			</plugin>
 		    </plugins>
-		</pluginManagement>
        </build>
 </project>
